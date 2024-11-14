@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('water-bubbles.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 a {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        h1 a:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .welcome-message {
+            font-size: 2em;
+            color: #ffd700;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 
+                0 0 10px #ffd700, 
+                0 0 20px #ffd700, 
+                0 0 30px #ffd700, 
+                0 0 40px #ffbf00,
+                0 0 70px #ffbf00,
+                0 0 80px #ff9c00,
+                0 0 100px #ff9c00;
+            animation: sparkle 2s infinite alternate;
+        }
+
+        .info {
+            position: absolute;
+            bottom: 20px;
+            font-size: 1.2em;
+            color: #ffd700;
+            font-weight: bold;
+            text-shadow: 
+                0 0 5px #ffd700, 
+                0 0 10px #ffd700, 
+                0 0 15px #ffbf00,
+                0 0 20px #ff9c00;
+            animation: sparkle 2s infinite alternate;
+        }
+
+        @keyframes sparkle {
+            0% {
+                text-shadow: 
+                    0 0 10px #ffd700, 
+                    0 0 20px #ffd700, 
+                    0 0 30px #ffd700, 
+                    0 0 40px #ffbf00,
+                    0 0 70px #ffbf00,
+                    0 0 80px #ff9c00,
+                    0 0 100px #ff9c00;
+                transform: scale(1);
+            }
+            50% {
+                text-shadow: 
+                    0 0 20px #ffd700, 
+                    0 0 30px #ffd700, 
+                    0 0 40px #ffd700, 
+                    0 0 50px #ffbf00,
+                    0 0 80px #ffbf00,
+                    0 0 100px #ff9c00,
+                    0 0 120px #ff9c00;
+                transform: scale(1.05);
+            }
+            100% {
+                text-shadow: 
+                    0 0 10px #ffd700, 
+                    0 0 20px #ffd700, 
+                    0 0 30px #ffd700, 
+                    0 0 40px #ffbf00,
+                    0 0 60px #ffbf00,
+                    0 0 70px #ff9c00,
+                    0 0 90px #ff9c00;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 class="welcome-message">
+        CHÀO MỪNG CÁC BẠN ĐÃ ĐẾN VỚI TRANG BÀI TẬP CÁ NHÂN CỦA MÌNH
+    </h2>
+    <h1>
+        <a href="cvcanhan/index.html">CV cá nhân</a><br>
+        <a href="hoca/hoca/index.html">Hồ cá</a>
+    </h1>
+    <div class="info">
+        Huỳnh Nguyễn Huyền Trân - 50.01.103.077
+    </div>
+</body>
+</html>
